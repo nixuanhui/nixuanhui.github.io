@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Theo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="《数据结构与算法之美–复杂度分析》keyword:  ​    概念，大O表示法，常见的时间复杂度，最好、最坏、平均、均摊时间复杂度 概念: 时间复杂度的全称是渐进时间复杂度，表示算法的执行时间与数据规模之间的增长关系 空间复杂度全称就是渐进空间复杂度（asymptotic space complexity），表示算法的存储空间与数据规模之间的增长关系  大O表示法： T（n）=O（f(n)）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Theo">
+<meta property="og:url" content="http://yoursite.com/2018/12/02/2018-11-24-《数据结构与算法之美--复杂度分析》/index.html">
+<meta property="og:site_name" content="Theo">
+<meta property="og:description" content="《数据结构与算法之美–复杂度分析》keyword:  ​    概念，大O表示法，常见的时间复杂度，最好、最坏、平均、均摊时间复杂度 概念: 时间复杂度的全称是渐进时间复杂度，表示算法的执行时间与数据规模之间的增长关系 空间复杂度全称就是渐进空间复杂度（asymptotic space complexity），表示算法的存储空间与数据规模之间的增长关系  大O表示法： T（n）=O（f(n)）">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-02T08:01:41.173Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Theo">
+<meta name="twitter:description" content="《数据结构与算法之美–复杂度分析》keyword:  ​    概念，大O表示法，常见的时间复杂度，最好、最坏、平均、均摊时间复杂度 概念: 时间复杂度的全称是渐进时间复杂度，表示算法的执行时间与数据规模之间的增长关系 空间复杂度全称就是渐进空间复杂度（asymptotic space complexity），表示算法的存储空间与数据规模之间的增长关系  大O表示法： T（n）=O（f(n)）">
+  
+    <link rel="alternate" href="/atom.xml" title="Theo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Theo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2018-11-24-《数据结构与算法之美--复杂度分析》" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/02/2018-11-24-《数据结构与算法之美--复杂度分析》/" class="article-date">
+  <time datetime="2018-12-02T08:23:08.964Z" itemprop="datePublished">2018-12-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="《数据结构与算法之美–复杂度分析》"><a href="#《数据结构与算法之美–复杂度分析》" class="headerlink" title="《数据结构与算法之美–复杂度分析》"></a>《数据结构与算法之美–复杂度分析》</h2><p><strong>keyword:</strong> </p>
+<p>​    概念，大O表示法，常见的时间复杂度，最好、最坏、平均、均摊时间复杂度</p>
+<h4 id="概念"><a href="#概念" class="headerlink" title="概念:"></a>概念:</h4><ul>
+<li>时间复杂度的全称是渐进时间复杂度，表示算法的<strong>执行时间与数据规模</strong>之间的<strong>增长关</strong><br><strong>系</strong></li>
+<li>空间复杂度全称就是渐进空间复杂度（asymptotic space complexity），表示算法的<br>存储空间与数据规模之间的增长关系</li>
+</ul>
+<h4 id="大O表示法："><a href="#大O表示法：" class="headerlink" title="大O表示法："></a>大O表示法：</h4><ul>
+<li><p>T（n）=O（f(n)）</p>
+<ul>
+<li><p>备注：T(n)表示代码执行的时间；n 表示数据规模的大小；f(n) 表示每行代码执行的次数总和。公式中的<br>O，表示代码的执行时间 T(n) 与 f(n) 表达式成正比。</p>
+</li>
+<li><p>例子：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cal</span><span class="params">(n)</span>:</span></span><br><span class="line">	sum = <span class="number">0</span><span class="comment">#运行一次</span></span><br><span class="line">	</span><br><span class="line"> 	<span class="keyword">for</span> range(n):    <span class="comment">#运行N次</span></span><br><span class="line">		sum = sum + i;<span class="comment">#运行N次</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>T(n)=O(2n+1)</p>
+<p>备注：时间复杂度只看最高项，所以可简写为O(n)！</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="常见的时间复杂度："><a href="#常见的时间复杂度：" class="headerlink" title="常见的时间复杂度："></a>常见的时间复杂度：</h4><ul>
+<li>O(1)、O(logn)、O(nlogn)、O( 2n<del>指数表示</del>)，O(n!)</li>
+<li>时间复杂度为O(2n<del>指数表示</del> ) 和 O(n!)的算法称为NP（Non-Deterministic Polynomial，非确定多项<br>式）问题，因为其随着规模扩大，时间复杂度爆炸式增长，效率十分低下</li>
+</ul>
+<h4 id="最好、最坏、平均、均摊时间复杂度："><a href="#最好、最坏、平均、均摊时间复杂度：" class="headerlink" title="最好、最坏、平均、均摊时间复杂度："></a>最好、最坏、平均、均摊时间复杂度：</h4><ul>
+<li>同一段代码在<strong>不同情况下时间复杂度会出现量级差异</strong>，为了更全面，更准确的描述代码的时间复<br>杂度</li>
+<li>平均时间复杂度：<br>代码在不同情况下复杂度出现量级差别，则用代码所有可能情况下<strong>执行次数的加权平均值</strong>表示。</li>
+<li>均摊时间复杂度<br>两个条件满足时使用：1）代码在绝大多数情况下是低级别复杂度，只有极少数情况是高级别复杂<br>度；2）低级别和高级别复杂度出现具有时序规律。均摊结果一般都等于低级别复杂度。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/02/2018-11-24-《数据结构与算法之美--复杂度分析》/" data-id="cjp6mthca0009xkd4n0ioteew" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/12/02/2018-11-26-leetcode-19 Remove Nth Node From End of List (移除第N个节点)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/12/02/2018-11-22-python之多线程与多进程/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/12/02/2018-12-01-知乎精华话题爬虫/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-29-go入门--设置 GOPATH 有什么意义？/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-28-leetcode-141. Linked List Cycle（判定链表是否有环）/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-26-leetcode-19 Remove Nth Node From End of List (移除第N个节点)/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-24-《数据结构与算法之美--复杂度分析》/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

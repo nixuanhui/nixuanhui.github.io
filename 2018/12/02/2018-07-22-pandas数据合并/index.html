@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Theo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="pandas 数据合并 pandas.merge 可用数据库表连接的方式把将不同DataFrame 中的行连接起来。  参数：  left 参与合并的左侧 DataFrame     right 参与合并的右侧 DataFrame     how inner、outer、left、right其中之一。默认为 inner     on 用于连接的列名   left_on 左侧 DataFrame 中">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Theo">
+<meta property="og:url" content="http://yoursite.com/2018/12/02/2018-07-22-pandas数据合并/index.html">
+<meta property="og:site_name" content="Theo">
+<meta property="og:description" content="pandas 数据合并 pandas.merge 可用数据库表连接的方式把将不同DataFrame 中的行连接起来。  参数：  left 参与合并的左侧 DataFrame     right 参与合并的右侧 DataFrame     how inner、outer、left、right其中之一。默认为 inner     on 用于连接的列名   left_on 左侧 DataFrame 中">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-02T08:01:41.165Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Theo">
+<meta name="twitter:description" content="pandas 数据合并 pandas.merge 可用数据库表连接的方式把将不同DataFrame 中的行连接起来。  参数：  left 参与合并的左侧 DataFrame     right 参与合并的右侧 DataFrame     how inner、outer、left、right其中之一。默认为 inner     on 用于连接的列名   left_on 左侧 DataFrame 中">
+  
+    <link rel="alternate" href="/atom.xml" title="Theo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Theo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2018-07-22-pandas数据合并" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/02/2018-07-22-pandas数据合并/" class="article-date">
+  <time datetime="2018-12-02T08:23:08.945Z" itemprop="datePublished">2018-12-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="pandas-数据合并"><a href="#pandas-数据合并" class="headerlink" title="pandas 数据合并"></a>pandas 数据合并</h2><ul>
+<li><p><strong><em>pandas.merge</em></strong> 可用数据库表连接的方式把将不同DataFrame 中的行连接起来。</p>
+<ul>
+<li><p>参数：</p>
+</li>
+<li><p><strong>left</strong> 参与合并的左侧 DataFrame   </p>
+</li>
+<li><p><strong>right</strong> 参与合并的右侧 DataFrame   </p>
+</li>
+<li><p><strong>how</strong> inner、outer、left、right其中之一。默认为 inner   </p>
+</li>
+<li><p><strong>on</strong> 用于连接的列名   left_on 左侧 DataFrame 中用作连接键的列   </p>
+</li>
+<li><p><strong>right_on</strong> 右侧 DataFrame 中用作连接键的列  </p>
+</li>
+<li><p><strong>left_index</strong> 布尔型，将左侧的行索引用作其连接键   </p>
+</li>
+<li><p><strong>right_index</strong> 同上   </p>
+</li>
+<li><p><strong>sort</strong> 根据连接键对合并后的数据进行排序，默认为 True。<u>有时在处理大数据时，禁用该选项可获得更好的性能</u>   </p>
+</li>
+<li><p><strong>suffixes</strong> 字符串值元组，用于追加到重叠列名的末尾，默认为（‘_x’，‘_y’）   </p>
+</li>
+<li><p><strong>copy</strong> 默认为 True，复制结果集</p>
+</li>
+</ul>
+</li>
+<li><p><strong><em>pandas.concat</em></strong> 可以沿着一条轴将多个对象堆叠到一起</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pd.concat(objs, axis=0, join=&apos;outer&apos;, join_axes=None, ignore_index=False, keys=None, levels=None, names=None, verify_integrity=False)。</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><strong>axis</strong> : {0/’index’, 1/’columns’}, default 0</p>
+<blockquote>
+<p>0 表示沿-y轴拼接 ； 1表示沿x轴拼接</p>
+</blockquote>
+<p><strong>join</strong> : {‘inner’, ‘outer’}, default ‘outer’</p>
+<blockquote>
+<p>How to handle indexes on other axis(es) </p>
+</blockquote>
+<p><strong>join_axes</strong> : list of Index objects</p>
+<blockquote>
+<p>Specific indexes to use for the other n - 1 axes instead of performing inner/outer set logic</p>
+<p>用于其他n - 1轴的特定索引，而不是执行内部/外部设置逻辑 </p>
+</blockquote>
+<p><strong>ignore_index</strong> : boolean, default False</p>
+<blockquote>
+<p>If True, do not use the index values along the concatenation axis. The resulting axis will be labeled 0, …, n - 1. This is useful if you are concatenating objects where the concatenation axis does not have meaningful indexing information. Note the index values on the other axes are still respected in the join.</p>
+<p>如果为True，则不要使用沿连续轴的索引值。生成的轴将标记为0，…，n - 1.如果要连接并置轴没有有意义的索引信息的对象，这将非常有用。请注意，在连接中仍然遵循其他轴上的索引值。 </p>
+</blockquote>
+<p><strong>keys</strong> : sequence, default None</p>
+<blockquote>
+<p>If multiple levels passed, should contain tuples. Construct hierarchical index using the passed keys as the outermost level</p>
+<p>如果传递了多个级别，则应包含元组。使用传递的键作为最外层来构造层次索引 </p>
+</blockquote>
+<p><strong>levels</strong> : list of sequences, default None</p>
+<blockquote>
+<p>Specific levels (unique values) to use for constructing a MultiIndex. Otherwise they will be inferred from the keys</p>
+<p>用于构造MultiIndex的特定级别（唯一值）。否则，他们将从键中推断出来 </p>
+</blockquote>
+<p><strong>names</strong> : list, default None</p>
+<blockquote>
+<p>Names for the levels in the resulting hierarchical index</p>
+<p>生成的分层索引中的级别的名称 </p>
+</blockquote>
+<p><strong>verify_integrity</strong> : boolean, default False</p>
+<blockquote>
+<p>Check whether the new concatenated axis contains duplicates. This can be very expensive relative to the actual data concatenation</p>
+<p>检查是否新CONCAT enated轴包含重复。相对于实际数据连接，这可能非常昂贵 </p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><strong><em>dataframe.append</em></strong> dataframe或series凭借相同列数的同类数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DataFrame.append(other, ignore_index=False, verify_integrity=False)</span><br></pre></td></tr></table></figure>
+<p><strong>other</strong> : DataFrame or Series/dict-like object, or list of these</p>
+<blockquote>
+<p>The data to append.</p>
+<p>要追加的数据。 </p>
+</blockquote>
+<p><strong>ignore_index</strong> : boolean, default False</p>
+<blockquote>
+<p>If True, do not use the index labels.</p>
+<p>如果为True，请不要使用索引标签。 </p>
+</blockquote>
+<p><strong>verify_integrity</strong> : boolean, default False</p>
+<blockquote>
+<p>If True, raise ValueError on creating index with duplicates.</p>
+<p>如果为True，则在创建具有重复项的索引时引发ValueError。 </p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/02/2018-07-22-pandas数据合并/" data-id="cjp6mthc30003xkd4j1pgq6jf" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/12/02/2018-11-11-python3 把u开头的unicode转中文/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/12/02/2018-07-18-mysql的批量插入及更新/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/12/02/2018-12-01-知乎精华话题爬虫/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-29-go入门--设置 GOPATH 有什么意义？/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-28-leetcode-141. Linked List Cycle（判定链表是否有环）/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-26-leetcode-19 Remove Nth Node From End of List (移除第N个节点)/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-24-《数据结构与算法之美--复杂度分析》/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

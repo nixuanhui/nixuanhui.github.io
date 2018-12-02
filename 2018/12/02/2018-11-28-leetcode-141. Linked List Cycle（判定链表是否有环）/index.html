@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Theo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="leetcode-141. Linked List Cycle（判定链表是否有环）问题描述：  Given a linked list, determine if it has a cycle in it.  思路：  采用快慢指针法，快指针每次前进两个节点，慢指针每次前进一个节点  无环条件：node.next=NULL  有环条件：快指针指向的节点=慢指针指向的节点  代码： 12345678">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Theo">
+<meta property="og:url" content="http://yoursite.com/2018/12/02/2018-11-28-leetcode-141. Linked List Cycle（判定链表是否有环）/index.html">
+<meta property="og:site_name" content="Theo">
+<meta property="og:description" content="leetcode-141. Linked List Cycle（判定链表是否有环）问题描述：  Given a linked list, determine if it has a cycle in it.  思路：  采用快慢指针法，快指针每次前进两个节点，慢指针每次前进一个节点  无环条件：node.next=NULL  有环条件：快指针指向的节点=慢指针指向的节点  代码： 12345678">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-02T08:01:41.176Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Theo">
+<meta name="twitter:description" content="leetcode-141. Linked List Cycle（判定链表是否有环）问题描述：  Given a linked list, determine if it has a cycle in it.  思路：  采用快慢指针法，快指针每次前进两个节点，慢指针每次前进一个节点  无环条件：node.next=NULL  有环条件：快指针指向的节点=慢指针指向的节点  代码： 12345678">
+  
+    <link rel="alternate" href="/atom.xml" title="Theo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Theo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2018-11-28-leetcode-141. Linked List Cycle（判定链表是否有环）" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/02/2018-11-28-leetcode-141. Linked List Cycle（判定链表是否有环）/" class="article-date">
+  <time datetime="2018-12-02T08:23:08.969Z" itemprop="datePublished">2018-12-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="leetcode-141-Linked-List-Cycle（判定链表是否有环）"><a href="#leetcode-141-Linked-List-Cycle（判定链表是否有环）" class="headerlink" title="leetcode-141. Linked List Cycle（判定链表是否有环）"></a>leetcode-141. Linked List Cycle（判定链表是否有环）</h3><p>问题描述：</p>
+<ul>
+<li>Given a linked list, determine if it has a cycle in it.</li>
+</ul>
+<p>思路：</p>
+<ul>
+<li><p>采用快慢指针法，快指针每次前进两个节点，慢指针每次前进一个节点</p>
+</li>
+<li><p>无环条件：node.next=NULL</p>
+</li>
+<li>有环条件：快指针指向的节点=慢指针指向的节点</li>
+</ul>
+<p>代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">hasCycle</span><span class="params">(self, head)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type head: ListNode</span></span><br><span class="line"><span class="string">        :rtype: bool</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        slow=fast=head</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                fast=fast.next.next</span><br><span class="line">                slow=slow.next</span><br><span class="line">                <span class="keyword">if</span> fast==slow:</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line">            <span class="keyword">except</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">False</span></span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<blockquote>
+<p>Runtime: 40 ms, faster than 100.00% of Python online submissions for Linked List Cycle.</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/02/2018-11-28-leetcode-141. Linked List Cycle（判定链表是否有环）/" data-id="cjp6mthcd000bxkd4qcodezil" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/12/02/2018-11-29-go入门--设置 GOPATH 有什么意义？/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/12/02/2018-11-26-leetcode-19 Remove Nth Node From End of List (移除第N个节点)/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/12/02/2018-12-01-知乎精华话题爬虫/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-29-go入门--设置 GOPATH 有什么意义？/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-28-leetcode-141. Linked List Cycle（判定链表是否有环）/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-26-leetcode-19 Remove Nth Node From End of List (移除第N个节点)/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-24-《数据结构与算法之美--复杂度分析》/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

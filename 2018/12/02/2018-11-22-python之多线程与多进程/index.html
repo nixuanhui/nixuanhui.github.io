@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Theo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="python之多线程与多进程关键词： GIL锁，IO繁忙，线程安全，线程同步，进程池，进程通信，队列  GIL锁; 全局解释锁，Global Interpretor Lock,作用:单位时间内只允许一个线程运行。结果：无法利用多核实现并发功能，cpu繁忙的任务无效甚至效率更低（进程切换需要耗费资源），因此在python中不建议使用多线程，而使用多进程代替  cpu繁忙与io繁忙 cpu繁忙：内存操">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Theo">
+<meta property="og:url" content="http://yoursite.com/2018/12/02/2018-11-22-python之多线程与多进程/index.html">
+<meta property="og:site_name" content="Theo">
+<meta property="og:description" content="python之多线程与多进程关键词： GIL锁，IO繁忙，线程安全，线程同步，进程池，进程通信，队列  GIL锁; 全局解释锁，Global Interpretor Lock,作用:单位时间内只允许一个线程运行。结果：无法利用多核实现并发功能，cpu繁忙的任务无效甚至效率更低（进程切换需要耗费资源），因此在python中不建议使用多线程，而使用多进程代替  cpu繁忙与io繁忙 cpu繁忙：内存操">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-02T08:01:41.171Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Theo">
+<meta name="twitter:description" content="python之多线程与多进程关键词： GIL锁，IO繁忙，线程安全，线程同步，进程池，进程通信，队列  GIL锁; 全局解释锁，Global Interpretor Lock,作用:单位时间内只允许一个线程运行。结果：无法利用多核实现并发功能，cpu繁忙的任务无效甚至效率更低（进程切换需要耗费资源），因此在python中不建议使用多线程，而使用多进程代替  cpu繁忙与io繁忙 cpu繁忙：内存操">
+  
+    <link rel="alternate" href="/atom.xml" title="Theo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Theo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2018-11-22-python之多线程与多进程" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/02/2018-11-22-python之多线程与多进程/" class="article-date">
+  <time datetime="2018-12-02T08:23:08.961Z" itemprop="datePublished">2018-12-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="python之多线程与多进程"><a href="#python之多线程与多进程" class="headerlink" title="python之多线程与多进程"></a>python之多线程与多进程</h2><p><strong>关键词：</strong> GIL锁，IO繁忙，线程安全，线程同步，进程池，进程通信，队列</p>
+<ul>
+<li><p><strong>GIL锁</strong>;</p>
+<p>全局解释锁，Global Interpretor Lock,<br>作用:单位时间内只允许一个线程运行。<br>结果：无法利用多核实现并发功能，cpu繁忙的任务无效甚至效率更低（进程切换需要耗费资源），因此在python中不建议使用多线程，而使用多进程代替</p>
+</li>
+<li><p>cpu繁忙与io繁忙</p>
+<p>cpu繁忙：内存操作多</p>
+<p>io繁忙：硬盘或其他存储介质读写多，比如各种数据中心，网络存储和云存服务器</p>
+</li>
+<li><p>线程同步：</p>
+<p>单位时间只能有一个线程访问某个资源</p>
+</li>
+<li><p>线程安全：</p>
+<p>使用了线程同步，保证资源正确调用</p>
+</li>
+<li><p>python实现多进程的方法：</p>
+<ul>
+<li><p>主角：<strong>multiprocessing</strong></p>
+</li>
+<li><p>工具：Process（进程转化为类）, Pool（进程池）, Queue（队列，用于进程通讯）</p>
+</li>
+<li><p>初级实现：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Myprocess</span><span class="params">(Process)</span>:</span> <span class="comment">#自定义线程类</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, wait_ime)</span>:</span></span><br><span class="line">        Process.__init__(self)</span><br><span class="line">        self.wait_ime = wait_ime</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span><span class="comment">#重写run方法！！！！！！重要</span></span><br><span class="line">        n = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> n &lt; <span class="number">4</span>:</span><br><span class="line">            <span class="keyword">print</span> (<span class="string">"subProcess %s run,"</span> % os.getpid(), <span class="string">"&#123;0&#125;"</span>.format(time.ctime()))</span><br><span class="line">            time.sleep(self.wait_ime)</span><br><span class="line">            n += <span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line"></span><br><span class="line">    p=Myprocess(<span class="number">2</span>)</span><br><span class="line">    q=Myprocess(<span class="number">0.5</span>)</span><br><span class="line">    p.start() <span class="comment">#启动进程</span></span><br><span class="line">    q.start()</span><br><span class="line">    p.join()  <span class="comment">#等待p进程结束，主进程才能往下运行（简称阻塞）</span></span><br><span class="line">    q.join()</span><br><span class="line">    print(<span class="string">'结束'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">subProcess 6600 run, Thu Nov 22 16:19:57 2018  # 两个同进程</span><br><span class="line">subProcess 3012 run, Thu Nov 22 16:19:57 2018</span><br><span class="line">subProcess 3012 run, Thu Nov 22 16:19:58 2018</span><br><span class="line">subProcess 3012 run, Thu Nov 22 16:19:58 2018</span><br><span class="line">subProcess 3012 run, Thu Nov 22 16:19:59 2018</span><br><span class="line">subProcess 6600 run, Thu Nov 22 16:19:59 2018</span><br><span class="line">subProcess 6600 run, Thu Nov 22 16:20:01 2018</span><br><span class="line">subProcess 6600 run, Thu Nov 22 16:20:03 2018</span><br><span class="line">结束</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进程池</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">example</span><span class="params">(wait_ime)</span>:</span></span><br><span class="line">        n = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> n &lt; <span class="number">4</span>:</span><br><span class="line">            <span class="keyword">print</span> (<span class="string">"subProcess %s run,"</span> % os.getpid(), <span class="string">"&#123;0&#125;"</span>.format(time.ctime()))</span><br><span class="line">            time.sleep(wait_ime)</span><br><span class="line">            n += <span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    pool=Pool(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> (<span class="number">0.1</span>,<span class="number">1.2</span>,<span class="number">0.5</span>):</span><br><span class="line">        pool.apply_async(example,(i,))<span class="comment">#非阻塞模式，不会等一个进程运行完才运行下一个进程</span></span><br><span class="line">    pool.close()</span><br><span class="line">    pool.join()</span><br><span class="line">    print(<span class="string">'结束'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>队列（实现生产者与消费者模式的核心工具）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MultiProcessProducer</span><span class="params">(multiprocessing.Process)</span>:</span><span class="comment">#生产者类</span></span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, num, queue)</span>:</span>				<span class="comment"># 传出队列queue</span></span><br><span class="line">      <span class="string">"""Constructor"""</span></span><br><span class="line">      multiprocessing.Process.__init__(self)</span><br><span class="line">      self.num = num</span><br><span class="line">      self.queue = queue</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span>									<span class="comment">#存入数字</span></span><br><span class="line">      t1 = time.time()</span><br><span class="line">      print(<span class="string">'producer start '</span> + str(self.num))</span><br><span class="line">      <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1000</span>):</span><br><span class="line">         self.queue.put((i, self.num))			<span class="comment">#插入队列</span></span><br><span class="line">         time.sleep(<span class="number">0.1</span>)</span><br><span class="line">         <span class="keyword">print</span> (<span class="string">'producer put'</span>, i, self.num)</span><br><span class="line">      t2 = time.time()</span><br><span class="line"></span><br><span class="line">      print(<span class="string">'producer exit '</span> + str(self.num))</span><br><span class="line">      use_time = str(t2 - t1)</span><br><span class="line">      print(<span class="string">'producer '</span> + str(self.num) + <span class="string">', \</span></span><br><span class="line"><span class="string">      use_time: '</span>+ use_time)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MultiProcessConsumer</span><span class="params">(multiprocessing.Process)</span>:</span><span class="comment"># 消费者类</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, num, queue)</span>:</span></span><br><span class="line">      <span class="string">"""Constructor"""</span></span><br><span class="line">      multiprocessing.Process.__init__(self)</span><br><span class="line">      self.num = num</span><br><span class="line">      self.queue = queue							<span class="comment">#传入队列</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        t1 = time.time()</span><br><span class="line">        print(<span class="string">'consumer start '</span> + str(self.num))</span><br><span class="line">        <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">            d = self.queue.get()</span><br><span class="line">            print(<span class="string">'get'</span>+str(d))</span><br><span class="line">        t2 = time.time()</span><br><span class="line">        print(<span class="string">'consumer exit '</span> + str(self.num))</span><br><span class="line">        print(<span class="string">'consumer '</span> + str(self.num) + <span class="string">', use time:'</span>+ str(t2 - t1))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">       <span class="comment"># create queue</span></span><br><span class="line">       queue = multiprocessing.Queue()</span><br><span class="line"></span><br><span class="line">       <span class="comment"># create processes</span></span><br><span class="line">       producer = []</span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">          producer.append(MultiProcessProducer(i, queue))</span><br><span class="line"></span><br><span class="line">       consumer = []</span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">          consumer.append(MultiProcessConsumer(i, queue))</span><br><span class="line"></span><br><span class="line">       <span class="comment"># start processes</span></span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(len(producer)):</span><br><span class="line">          producer[i].start()</span><br><span class="line"></span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(len(consumer)):</span><br><span class="line">          consumer[i].start()</span><br><span class="line"></span><br><span class="line">       <span class="comment"># wait for processs to exit</span></span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(len(producer)):</span><br><span class="line">          producer[i].join()</span><br><span class="line"></span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(len(consumer)):</span><br><span class="line">          queue.put(<span class="keyword">None</span>)</span><br><span class="line"></span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(len(consumer)):</span><br><span class="line">          consumer[i].join()</span><br><span class="line"></span><br><span class="line">       print(<span class="string">'all done finish'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/02/2018-11-22-python之多线程与多进程/" data-id="cjp6mthc90008xkd42chdt4xi" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/12/02/2018-11-24-《数据结构与算法之美--复杂度分析》/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/12/02/2018-11-14-requests的简单反爬措施/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/12/02/2018-12-01-知乎精华话题爬虫/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-29-go入门--设置 GOPATH 有什么意义？/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-28-leetcode-141. Linked List Cycle（判定链表是否有环）/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-26-leetcode-19 Remove Nth Node From End of List (移除第N个节点)/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/2018-11-24-《数据结构与算法之美--复杂度分析》/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
