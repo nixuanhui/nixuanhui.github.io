@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,13 +79,16 @@
 
 
 
+<meta name="description" content="Don&apos;t BB,show the code!!">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Theo">
+<meta property="og:title" content="Theo&#39;s world">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Theo">
-<meta property="og:locale" content="default">
+<meta property="og:site_name" content="Theo&#39;s world">
+<meta property="og:description" content="Don&apos;t BB,show the code!!">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Theo">
+<meta name="twitter:title" content="Theo&#39;s world">
+<meta name="twitter:description" content="Don&apos;t BB,show the code!!">
 
 
 
@@ -101,7 +104,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -121,7 +124,7 @@
 
 
 
-  <title>Theo</title>
+  <title>Theo's world</title>
   
 
 
@@ -133,7 +136,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -152,7 +155,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Theo</span>
+        <span class="site-title">Theo's world</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -182,7 +185,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            Home
+            首页
           </a>
         </li>
       
@@ -192,7 +195,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            Archives
+            归档
           </a>
         </li>
       
@@ -232,13 +235,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-12-01-知乎精华话题爬虫/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Theo">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Theo">
+      <meta itemprop="name" content="Theo's world">
     </span>
 
     
@@ -248,7 +251,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/02/2018-12-01-知乎精华话题爬虫/" itemprop="url">Untitled</a></h1>
+                <a class="post-title-link" href="/2018/12/02/2018-12-01-知乎精华话题爬虫/" itemprop="url">知乎精华话题爬虫</a></h1>
         
 
         <div class="post-meta">
@@ -258,9 +261,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
                 2018-12-02
               </time>
             
@@ -299,29 +302,20 @@
 
       
         
-          
-            <h2 id="知乎精华话题爬虫"><a href="#知乎精华话题爬虫" class="headerlink" title="知乎精华话题爬虫"></a>知乎精华话题爬虫</h2><h4 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h4><ul>
+          <h4 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h4><ul>
 <li>通过百度搜索知乎精华话题能跳过知乎登陆界面</li>
 </ul>
 <h4 id="爬取众话题id"><a href="#爬取众话题id" class="headerlink" title="爬取众话题id"></a>爬取众话题id</h4><ul>
-<li><p>工具：selenium</p>
-</li>
-<li><p>难点：向下滚动</p>
-</li>
-<li><p>代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#存储大类网址</span></span><br><span class="line">lists = [<span class="string">'https://www.zhihu.com/topics#%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E7%BB%8F%E6%B5%8E%E5%AD%A6'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E8%BF%90%E5%8A%A8'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E4%BA%92%E8%81%94%E7%BD%91'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E8%89%BA%E6%9C%AF'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E9%98%85%E8%AF%BB'</span>, <span class="string">'https://www.zhihu.com/topics#%E7%BE%8E%E9%A3%9F'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E5%8A%A8%E6%BC%AB'</span>, <span class="string">'https://www.zhihu.com/topics#%E6%B1%BD%E8%BD%A6'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E8%B6%B3%E7%90%83'</span>, <span class="string">'https://www.zhihu.com/topics#%E6%95%99%E8%82%B2'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E6%91%84%E5%BD%B1'</span>, <span class="string">'https://www.zhihu.com/topics#%E5%8E%86%E5%8F%B2'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E6%96%87%E5%8C%96'</span>, <span class="string">'https://www.zhihu.com/topics#%E6%97%85%E8%A1%8C'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E9%87%91%E8%9E%8D'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E6%B8%B8%E6%88%8F'</span>, <span class="string">'https://www.zhihu.com/topics#%E7%AF%AE%E7%90%83'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E7%94%9F%E7%89%A9%E5%AD%A6'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E7%89%A9%E7%90%86%E5%AD%A6'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E5%8C%96%E5%AD%A6'</span>, <span class="string">'https://www.zhihu.com/topics#%E7%A7%91%E6%8A%80'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E4%BD%93%E8%82%B2'</span>, <span class="string">'https://www.zhihu.com/topics#%E5%95%86%E4%B8%9A'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E5%81%A5%E5%BA%B7'</span>, <span class="string">'https://www.zhihu.com/topics#%E5%88%9B%E4%B8%9A'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E8%AE%BE%E8%AE%A1'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E6%B3%95%E5%BE%8B'</span>, <span class="string">'https://www.zhihu.com/topics#%E7%94%B5%E5%BD%B1'</span>,</span><br><span class="line">                 <span class="string">'https://www.zhihu.com/topics#%E9%9F%B3%E4%B9%90'</span>, <span class="string">'https://www.zhihu.com/topics#%E6%8A%95%E8%B5%84'</span>]</span><br><span class="line"></span><br><span class="line">max = len(lists)</span><br><span class="line"></span><br><span class="line"><span class="comment">#无头浏览器初始化</span></span><br><span class="line">chrome_options = Options()</span><br><span class="line">chrome_options.add_argument(<span class="string">'--headless'</span>)</span><br><span class="line">chrome_options.add_argument(<span class="string">'--disable-gpu'</span>)</span><br><span class="line">chrome_options.add_argument(<span class="string">'--no-sandbox'</span>)</span><br><span class="line">browser = webdriver.Chrome(chrome_options=chrome_options, )</span><br><span class="line"></span><br><span class="line"><span class="comment">#遍历大类列表的每一个网址，向下滚动，获取每个子话题id</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(max):</span><br><span class="line">    b = int(i)</span><br><span class="line">    print(str(i))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 打开大类网址</span></span><br><span class="line">    browser.get(lists[b])</span><br><span class="line">    time.sleep(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 动态加载</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            print(<span class="string">'休眠2秒'</span>)</span><br><span class="line">            time.sleep(<span class="number">2</span>)</span><br><span class="line">            browser.execute_script(<span class="string">'window.scrollTo(0, document.body.scrollHeight)'</span>)</span><br><span class="line">            a = browser.find_element_by_xpath(<span class="string">'//*[@class="zg-btn-white zu-button-more"]'</span>)<span class="comment">#向下滑动</span></span><br><span class="line">            a.click()</span><br><span class="line">        <span class="keyword">except</span> :</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="comment"># 获取小类id</span></span><br><span class="line">    print(<span class="string">'获取并保存'</span>)</span><br><span class="line">    aaa = re.findall(<span class="string">"/topic/(\d+)"</span>, browser.page_source, re.S)</span><br><span class="line">    aaa=[str(i) <span class="keyword">for</span> i <span class="keyword">in</span> aaa]</span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'topic_id.txt'</span>,<span class="string">'a'</span>) <span class="keyword">as</span> tmp:</span><br><span class="line">        tmp.write(<span class="string">'\n'</span>.join(aaa))</span><br><span class="line">    print(<span class="string">'ok'</span>)</span><br><span class="line"></span><br><span class="line">browser.close()</span><br></pre></td></tr></table></figure>
-</li>
+<li>工具：selenium</li>
+<li>难点：向下滚动</li>
 </ul>
-<h4 id="爬取每个话题的精华问题"><a href="#爬取每个话题的精华问题" class="headerlink" title="爬取每个话题的精华问题"></a>爬取每个话题的精华问题</h4><ul>
-<li><p>难点：量大，需调用多线程</p>
-</li>
-<li><p>工具：scrapy</p>
-</li>
-<li><p>代码</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">zhihuspider</span><span class="params">(scrapy.Spider)</span>:</span></span><br><span class="line">    handle_httpstatus_list = [<span class="number">429</span>, <span class="number">403</span>]</span><br><span class="line">    name = <span class="string">'Zhihu_essence_Spider'</span></span><br><span class="line">    get_item=<span class="number">0</span>          <span class="comment">#统计正常爬取信息</span></span><br><span class="line">    drop_item=<span class="number">0</span>         <span class="comment">#统计不正常爬取信息</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">start_requests</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="comment">#获取话题id</span></span><br><span class="line">        <span class="keyword">with</span> open(<span class="string">r'E:\hui_code\work_space\topic_id.txt'</span>,<span class="string">'r'</span>) <span class="keyword">as</span> tmp:</span><br><span class="line">            data=tmp.read()</span><br><span class="line">            topic_id=re.findall(<span class="string">'([0-9]*?)\n'</span>,data)</span><br><span class="line"></span><br><span class="line">        topic_id=[str(i) <span class="keyword">for</span> i <span class="keyword">in</span> topic_id]<span class="comment">#转化元素为字符串</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> topic_id:</span><br><span class="line">            <span class="keyword">for</span> times <span class="keyword">in</span> range(<span class="number">4</span>):</span><br><span class="line">                url=<span class="string">'https://www.zhihu.com/api/v4/topics/'</span> + str(i) + <span class="string">'/feeds/essence?&amp;limit=10&amp;offset='</span>+str(<span class="number">15</span>*times)</span><br><span class="line">                <span class="keyword">yield</span> scrapy.Request(url=url,callback=self.parse,meta=&#123;<span class="string">'topic_id'</span>:str(i)&#125;,priority=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parse</span><span class="params">(self, response)</span>:</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            item = ZhihutopicItem()</span><br><span class="line">            text = json.loads(response.text)</span><br><span class="line">            <span class="keyword">if</span> <span class="string">"data"</span> <span class="keyword">not</span> <span class="keyword">in</span> text <span class="keyword">and</span> <span class="string">"paging"</span> <span class="keyword">in</span> text:</span><br><span class="line">                text=text[<span class="string">'paging'</span>]</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(len(text[<span class="string">"data"</span>])):</span><br><span class="line"></span><br><span class="line">                    item[<span class="string">'topic_url'</span>] = <span class="string">'https://www.zhihu.com/topic/'</span> + response.meta[<span class="string">'topic_id'</span>]</span><br><span class="line"></span><br><span class="line">                    item[<span class="string">'title'</span>] = text[<span class="string">"data"</span>][i][<span class="string">"target"</span>][<span class="string">"question"</span>][<span class="string">"title"</span>]</span><br><span class="line">                    <span class="keyword">if</span> re.findall(<span class="string">'[a-zA-Z]'</span>, str(item[<span class="string">'title'</span>])):  <span class="comment"># 匹配英文字符成功则舍弃</span></span><br><span class="line">                        <span class="keyword">continue</span></span><br><span class="line">                    item[<span class="string">'comment_num'</span>] = text[<span class="string">"data"</span>][i][<span class="string">"target"</span>][<span class="string">"comment_count"</span>]</span><br><span class="line">                    item[<span class="string">'zlike'</span>] = text[<span class="string">"data"</span>][i][<span class="string">"target"</span>][<span class="string">"voteup_count"</span>]</span><br><span class="line">                    item[<span class="string">'create_time'</span>] = text[<span class="string">"data"</span>][i][<span class="string">"target"</span>][<span class="string">"created_time"</span>]</span><br><span class="line">                    item[<span class="string">'detail_url'</span>] = <span class="string">'https://www.zhihu.com/question/'</span> + str(</span><br><span class="line">                        text[<span class="string">"data"</span>][i][<span class="string">"target"</span>][<span class="string">"question"</span>][<span class="string">"id"</span>])</span><br><span class="line">                    item[<span class="string">'typeid'</span>] = <span class="number">0</span></span><br><span class="line">                    item[<span class="string">'topic_id'</span>] = response.meta[<span class="string">'topic_id'</span>]</span><br><span class="line">                    <span class="keyword">if</span> item[<span class="string">'title'</span>] != <span class="string">''</span>:</span><br><span class="line"></span><br><span class="line">                        <span class="keyword">yield</span> item</span><br><span class="line">                        self.get_item = self.get_item + <span class="number">1</span></span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            print(text)</span><br><span class="line">            self.drop_item = self.drop_item + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">close</span><span class="params">(self, spider, reason)</span>:</span></span><br><span class="line">        logging.info(<span class="string">'捕获到的item数为'</span> + str(self.get_item))</span><br><span class="line">        logging.info(<span class="string">'关键信息缺失的item数为'</span> + str(self.drop_item))</span><br></pre></td></tr></table></figure></li>
-</ul>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/02/2018-12-01-知乎精华话题爬虫/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -371,13 +365,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-11-29-go入门--设置 GOPATH 有什么意义？/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Theo">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Theo">
+      <meta itemprop="name" content="Theo's world">
     </span>
 
     
@@ -387,7 +381,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/02/2018-11-29-go入门--设置 GOPATH 有什么意义？/" itemprop="url">Untitled</a></h1>
+                <a class="post-title-link" href="/2018/12/02/2018-11-29-go入门--设置 GOPATH 有什么意义？/" itemprop="url">go入门--设置 GOPATH 有什么意义？</a></h1>
         
 
         <div class="post-meta">
@@ -397,9 +391,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
                 2018-12-02
               </time>
             
@@ -438,59 +432,16 @@
 
       
         
-          
-            <h3 id="go入门–设置-GOPATH-有什么意义？"><a href="#go入门–设置-GOPATH-有什么意义？" class="headerlink" title="go入门–设置 GOPATH 有什么意义？"></a>go入门–设置 GOPATH 有什么意义？</h3><h4 id="参考答案："><a href="#参考答案：" class="headerlink" title="参考答案："></a>参考答案：</h4><p>​    1.环境变量 GOPATH 的值可以是<strong>一个目录的路径</strong>，也可以包含<strong>多个目录路径</strong>，</p>
+          <h4 id="参考答案："><a href="#参考答案：" class="headerlink" title="参考答案："></a>参考答案：</h4><p>​    1.环境变量 GOPATH 的值可以是<strong>一个目录的路径</strong>，也可以包含<strong>多个目录路径</strong>，</p>
 <p>​    2.每个目录都代表 Go 语言的一个<strong>工作区（workspace）</strong>。</p>
 <p>​    3.工作区用于放置 Go 语言的<strong>源码文件（source file）</strong>以及安装（install）后的<strong>归档文件（archive file，也就是以“.a”为扩展名的文件）</strong>和<strong>可执行文件（executable file）</strong></p>
-<h4 id="概括："><a href="#概括：" class="headerlink" title="概括："></a>概括：</h4><ul>
-<li>Go 语言项目在其生命周期内的所有操作（编码、依赖管理、构建、测试、安装等）基本上都是围绕着 GOPATH 和工作区进行的</li>
-</ul>
-<h4 id="关键问题点："><a href="#关键问题点：" class="headerlink" title="关键问题点："></a>关键问题点：</h4><p><strong>1. 你是否清楚 Go 语言源码的组织方式；</strong></p>
-<ul>
-<li><p>与许多编程语言一样，Go 语言的源码是以代码包为基本组织单位的</p>
-</li>
-<li><p>在文件系统中，这些代码包其实是与目录一一对应的。目录可以有子目录，所以代码包也可以有子包</p>
-</li>
-<li><p>在工作区中，一个代码包的导入路径实际上就是从 src 子目录，到该包的实际存储位置的相对路径</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">"github.com/labstack/echo"</span> <span class="comment">//导入包</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p><strong>2. 你是否了解源码安装后的结果（只有在安装后，Go 语言源码才能被我们或其他代码使用）；</strong></p>
-<ul>
-<li><p>源码文件通常会被放在某个工作区的 src 子目录下。</p>
-</li>
-<li><p>那么在安装后如果产生了归档文件，就会放进该工作区的 pkg 子目录；如果产生了可执行文件，就可能会放进该工作区的 bin 子目录。</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">go</span> install github.com/labstack/echo <span class="comment">//下载包</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>上面这个代码包导入路径还有另外一层含义，那就是：该代码包的源码文件<strong>存在于 GitHub 网站的 labstack 组的代码仓库 echo 中</strong>。</p>
-</li>
-<li><p>总结语：某个工作区的 src 子目录下的源码文件在安装后一般会被放置到当前工作区的 pkg 子目录下对应的目录中，或者被直接放置到该工作区的 bin 子目录中</p>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>3. 你是否理解构建和安装 Go 程序的过程。这在开发程序以及查找程序问题的时候都很有用，否则你很可能会走弯路；</strong></p>
-<ul>
-<li>构建使用命令<code>go build</code>，安装使用命令<code>go install</code>。</li>
-<li>构建和安装代码包的时候都会执行编译、打包等操作，并且这些操作生成的任何文件都会先被保存到某个临时的目录中</li>
-<li>如果构建的是库源码文件，那么操作的结果文件只会存在于临时目录中。这里的构建的主要意义在于检查和验证</li>
-<li>如果构建的是命令源码文件，那么操作的结果文件会被搬运到那个源码文件所在的目录中。</li>
-</ul>
-<p><strong>4.你是否清楚 go build 命令的一些可选项的用途和用法，虽然有的集成开发环境已经为你选择好了。</strong></p>
-<ul>
-<li>在运行<code>go build</code>命令的时候，默认不会编译目标代码包所依赖的那些代码包</li>
-<li><code>-a</code>: 强行编译目标代码包及依赖代码包</li>
-<li><p><code>-v</code>:可以看到<code>go build</code>命令编译的代码包的名称(一般于-a搭配使用)</p>
-</li>
-<li><p><code>-u</code>：下载并安装代码包，不论工作区中是否已存在它们。</p>
-</li>
-<li><code>-d</code>：只下载代码包，不安装代码包。</li>
-<li><code>-fix</code>：在下载代码包后先运行一个用于根据当前 Go 语言版本修正代码的工具，然后再安装代码包。</li>
-<li><code>-t</code>：同时下载测试所需的代码包。</li>
-<li><code>-insecure</code>：允许通过非安全的网络协议下载和安装代码包。HTTP 就是这样的协议</li>
-</ul>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/02/2018-11-29-go入门--设置 GOPATH 有什么意义？/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -540,13 +491,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-11-28-leetcode-141. Linked List Cycle（判定链表是否有环）/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Theo">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Theo">
+      <meta itemprop="name" content="Theo's world">
     </span>
 
     
@@ -556,7 +507,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/02/2018-11-28-leetcode-141. Linked List Cycle（判定链表是否有环）/" itemprop="url">Untitled</a></h1>
+                <a class="post-title-link" href="/2018/12/02/2018-11-28-leetcode-141. Linked List Cycle（判定链表是否有环）/" itemprop="url">leetcode-141. Linked List Cycle（判定链表是否有环）</a></h1>
         
 
         <div class="post-meta">
@@ -566,9 +517,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
                 2018-12-02
               </time>
             
@@ -607,30 +558,25 @@
 
       
         
-          
-            <h3 id="leetcode-141-Linked-List-Cycle（判定链表是否有环）"><a href="#leetcode-141-Linked-List-Cycle（判定链表是否有环）" class="headerlink" title="leetcode-141. Linked List Cycle（判定链表是否有环）"></a>leetcode-141. Linked List Cycle（判定链表是否有环）</h3><p>问题描述：</p>
-<ul>
+          <h4 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h4><ul>
 <li>Given a linked list, determine if it has a cycle in it.</li>
 </ul>
-<p>思路：</p>
-<ul>
+<h4 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h4><ul>
 <li><p>采用快慢指针法，快指针每次前进两个节点，慢指针每次前进一个节点</p>
 </li>
 <li><p>无环条件：node.next=NULL</p>
 </li>
-<li>有环条件：快指针指向的节点=慢指针指向的节点</li>
-</ul>
-<p>代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">hasCycle</span><span class="params">(self, head)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type head: ListNode</span></span><br><span class="line"><span class="string">        :rtype: bool</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        slow=fast=head</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                fast=fast.next.next</span><br><span class="line">                slow=slow.next</span><br><span class="line">                <span class="keyword">if</span> fast==slow:</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line">            <span class="keyword">except</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">False</span></span><br></pre></td></tr></table></figure>
-<p>结果：</p>
-<blockquote>
-<p>Runtime: 40 ms, faster than 100.00% of Python online submissions for Linked List Cycle.</p>
-</blockquote>
-
-          
+<li>有环条件：快指针指向的节点=慢指针指向的节点
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/02/2018-11-28-leetcode-141. Linked List Cycle（判定链表是否有环）/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </li></ul></div>
     
     
     
@@ -677,13 +623,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-11-26-leetcode-19 Remove Nth Node From End of List (移除第N个节点)/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Theo">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Theo">
+      <meta itemprop="name" content="Theo's world">
     </span>
 
     
@@ -693,7 +639,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/02/2018-11-26-leetcode-19 Remove Nth Node From End of List (移除第N个节点)/" itemprop="url">Untitled</a></h1>
+                <a class="post-title-link" href="/2018/12/02/2018-11-26-leetcode-19 Remove Nth Node From End of List (移除第N个节点)/" itemprop="url">leetcode-19 Remove Nth Node From End of List (移除第N个节点)</a></h1>
         
 
         <div class="post-meta">
@@ -703,9 +649,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
                 2018-12-02
               </time>
             
@@ -744,26 +690,16 @@
 
       
         
-          
-            <h3 id="leetcode-19-Remove-Nth-Node-From-End-of-List-移除第N个节点"><a href="#leetcode-19-Remove-Nth-Node-From-End-of-List-移除第N个节点" class="headerlink" title="leetcode-19 Remove Nth Node From End of List (移除第N个节点)"></a>leetcode-19 Remove Nth Node From End of List (移除第N个节点)</h3><h4 id="原题："><a href="#原题：" class="headerlink" title="原题："></a>原题：</h4><p>​    Given a linked list, remove the <em>n</em>-th node from the end of list and return its head.</p>
+          <h4 id="原题："><a href="#原题：" class="headerlink" title="原题："></a>原题：</h4><p>​    Given a linked list, remove the <em>n</em>-th node from the end of list and return its head.</p>
 <p>​    Example:    </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Given linked list: 1-&gt;2-&gt;3-&gt;4-&gt;5, and n = 2.</span><br><span class="line"></span><br><span class="line">After removing the second node from the end, the linked list becomes 1-&gt;2-&gt;3-&gt;5.</span><br></pre></td></tr></table></figure>
-<h4 id="理解："><a href="#理解：" class="headerlink" title="理解："></a>理解：</h4><ul>
-<li>考察<strong>无头</strong>单链表<strong>移除节点</strong>代码编写</li>
-</ul>
-<h4 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h4><ul>
-<li>遍历数组得到长度</li>
-<li>遍历到剔除节点的前一个节点</li>
-<li>剔除节点</li>
-<li>特殊情况分析</li>
-<li>返回结果</li>
-</ul>
-<h4 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"># Definition for singly-linked list.</span><br><span class="line"># class ListNode:</span><br><span class="line">#     def __init__(self, x):</span><br><span class="line">#         self.val = x</span><br><span class="line">#         self.next = None</span><br><span class="line"></span><br><span class="line">class Solution:</span><br><span class="line">    def removeNthFromEnd(self, head, n):</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        :type head: ListNode</span><br><span class="line">        :type n: int</span><br><span class="line">        :rtype: ListNode</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        </span><br><span class="line">        len_head=1</span><br><span class="line">        flag=1</span><br><span class="line">        next_node=head</span><br><span class="line">        </span><br><span class="line">        #得到链表长度</span><br><span class="line">        while next_node.next:</span><br><span class="line">            next_node=next_node.next</span><br><span class="line">            len_head=len_head+1</span><br><span class="line">            </span><br><span class="line">        #特殊情况，移除第一个节点    </span><br><span class="line">        if n==len_head:</span><br><span class="line">            return head.next</span><br><span class="line">            </span><br><span class="line">        #遍历到移除节点前一个节点</span><br><span class="line">        first_node=head</span><br><span class="line">        while flag&lt;len_head-n:</span><br><span class="line">            first_node=first_node.next</span><br><span class="line">            flag+=1</span><br><span class="line">            </span><br><span class="line">        #移除节点</span><br><span class="line">        first_node.next=first_node.next.next</span><br><span class="line">        </span><br><span class="line">        #返回结果</span><br><span class="line">        return head</span><br></pre></td></tr></table></figure>
-<h4 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h4><blockquote>
-<p>Runtime: 40 ms, faster than 99.22% of Python3 online submissions for Remove Nth Node From End of List.</p>
-</blockquote>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/02/2018-11-26-leetcode-19 Remove Nth Node From End of List (移除第N个节点)/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -813,13 +749,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-11-24-《数据结构与算法之美--复杂度分析》/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Theo">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Theo">
+      <meta itemprop="name" content="Theo's world">
     </span>
 
     
@@ -829,7 +765,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/02/2018-11-24-《数据结构与算法之美--复杂度分析》/" itemprop="url">Untitled</a></h1>
+                <a class="post-title-link" href="/2018/12/02/2018-11-24-《数据结构与算法之美--复杂度分析》/" itemprop="url">《数据结构与算法之美--复杂度分析》</a></h1>
         
 
         <div class="post-meta">
@@ -839,9 +775,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
                 2018-12-02
               </time>
             
@@ -880,40 +816,21 @@
 
       
         
-          
-            <h2 id="《数据结构与算法之美–复杂度分析》"><a href="#《数据结构与算法之美–复杂度分析》" class="headerlink" title="《数据结构与算法之美–复杂度分析》"></a>《数据结构与算法之美–复杂度分析》</h2><p><strong>keyword:</strong> </p>
+          <p><strong>keyword:</strong> </p>
 <p>​    概念，大O表示法，常见的时间复杂度，最好、最坏、平均、均摊时间复杂度</p>
 <h4 id="概念"><a href="#概念" class="headerlink" title="概念:"></a>概念:</h4><ul>
 <li>时间复杂度的全称是渐进时间复杂度，表示算法的<strong>执行时间与数据规模</strong>之间的<strong>增长关</strong><br><strong>系</strong></li>
-<li>空间复杂度全称就是渐进空间复杂度（asymptotic space complexity），表示算法的<br>存储空间与数据规模之间的增长关系</li>
-</ul>
-<h4 id="大O表示法："><a href="#大O表示法：" class="headerlink" title="大O表示法："></a>大O表示法：</h4><ul>
-<li><p>T（n）=O（f(n)）</p>
-<ul>
-<li><p>备注：T(n)表示代码执行的时间；n 表示数据规模的大小；f(n) 表示每行代码执行的次数总和。公式中的<br>O，表示代码的执行时间 T(n) 与 f(n) 表达式成正比。</p>
-</li>
-<li><p>例子：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cal</span><span class="params">(n)</span>:</span></span><br><span class="line">	sum = <span class="number">0</span><span class="comment">#运行一次</span></span><br><span class="line">	</span><br><span class="line"> 	<span class="keyword">for</span> range(n):    <span class="comment">#运行N次</span></span><br><span class="line">		sum = sum + i;<span class="comment">#运行N次</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>T(n)=O(2n+1)</p>
-<p>备注：时间复杂度只看最高项，所以可简写为O(n)！</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="常见的时间复杂度："><a href="#常见的时间复杂度：" class="headerlink" title="常见的时间复杂度："></a>常见的时间复杂度：</h4><ul>
-<li>O(1)、O(logn)、O(nlogn)、O( 2n<del>指数表示</del>)，O(n!)</li>
-<li>时间复杂度为O(2n<del>指数表示</del> ) 和 O(n!)的算法称为NP（Non-Deterministic Polynomial，非确定多项<br>式）问题，因为其随着规模扩大，时间复杂度爆炸式增长，效率十分低下</li>
-</ul>
-<h4 id="最好、最坏、平均、均摊时间复杂度："><a href="#最好、最坏、平均、均摊时间复杂度：" class="headerlink" title="最好、最坏、平均、均摊时间复杂度："></a>最好、最坏、平均、均摊时间复杂度：</h4><ul>
-<li>同一段代码在<strong>不同情况下时间复杂度会出现量级差异</strong>，为了更全面，更准确的描述代码的时间复<br>杂度</li>
-<li>平均时间复杂度：<br>代码在不同情况下复杂度出现量级差别，则用代码所有可能情况下<strong>执行次数的加权平均值</strong>表示。</li>
-<li>均摊时间复杂度<br>两个条件满足时使用：1）代码在绝大多数情况下是低级别复杂度，只有极少数情况是高级别复杂<br>度；2）低级别和高级别复杂度出现具有时序规律。均摊结果一般都等于低级别复杂度。</li>
-</ul>
-
-          
+<li><p>空间复杂度全称就是渐进空间复杂度（asymptotic space complexity），表示算法的<br>存储空间与数据规模之间的增长关系</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/02/2018-11-24-《数据结构与算法之美--复杂度分析》/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </li></ul></div>
     
     
     
@@ -960,13 +877,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-11-22-python之多线程与多进程/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Theo">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Theo">
+      <meta itemprop="name" content="Theo's world">
     </span>
 
     
@@ -976,7 +893,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/02/2018-11-22-python之多线程与多进程/" itemprop="url">Untitled</a></h1>
+                <a class="post-title-link" href="/2018/12/02/2018-11-22-python之多线程与多进程/" itemprop="url">python之多线程与多进程</a></h1>
         
 
         <div class="post-meta">
@@ -986,9 +903,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
                 2018-12-02
               </time>
             
@@ -1027,48 +944,17 @@
 
       
         
-          
-            <h2 id="python之多线程与多进程"><a href="#python之多线程与多进程" class="headerlink" title="python之多线程与多进程"></a>python之多线程与多进程</h2><p><strong>关键词：</strong> GIL锁，IO繁忙，线程安全，线程同步，进程池，进程通信，队列</p>
-<ul>
-<li><p><strong>GIL锁</strong>;</p>
-<p>全局解释锁，Global Interpretor Lock,<br>作用:单位时间内只允许一个线程运行。<br>结果：无法利用多核实现并发功能，cpu繁忙的任务无效甚至效率更低（进程切换需要耗费资源），因此在python中不建议使用多线程，而使用多进程代替</p>
-</li>
-<li><p>cpu繁忙与io繁忙</p>
-<p>cpu繁忙：内存操作多</p>
-<p>io繁忙：硬盘或其他存储介质读写多，比如各种数据中心，网络存储和云存服务器</p>
-</li>
-<li><p>线程同步：</p>
-<p>单位时间只能有一个线程访问某个资源</p>
-</li>
-<li><p>线程安全：</p>
-<p>使用了线程同步，保证资源正确调用</p>
-</li>
-<li><p>python实现多进程的方法：</p>
-<ul>
-<li><p>主角：<strong>multiprocessing</strong></p>
-</li>
-<li><p>工具：Process（进程转化为类）, Pool（进程池）, Queue（队列，用于进程通讯）</p>
-</li>
-<li><p>初级实现：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Myprocess</span><span class="params">(Process)</span>:</span> <span class="comment">#自定义线程类</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, wait_ime)</span>:</span></span><br><span class="line">        Process.__init__(self)</span><br><span class="line">        self.wait_ime = wait_ime</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span><span class="comment">#重写run方法！！！！！！重要</span></span><br><span class="line">        n = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> n &lt; <span class="number">4</span>:</span><br><span class="line">            <span class="keyword">print</span> (<span class="string">"subProcess %s run,"</span> % os.getpid(), <span class="string">"&#123;0&#125;"</span>.format(time.ctime()))</span><br><span class="line">            time.sleep(self.wait_ime)</span><br><span class="line">            n += <span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line"></span><br><span class="line">    p=Myprocess(<span class="number">2</span>)</span><br><span class="line">    q=Myprocess(<span class="number">0.5</span>)</span><br><span class="line">    p.start() <span class="comment">#启动进程</span></span><br><span class="line">    q.start()</span><br><span class="line">    p.join()  <span class="comment">#等待p进程结束，主进程才能往下运行（简称阻塞）</span></span><br><span class="line">    q.join()</span><br><span class="line">    print(<span class="string">'结束'</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">subProcess 6600 run, Thu Nov 22 16:19:57 2018  # 两个同进程</span><br><span class="line">subProcess 3012 run, Thu Nov 22 16:19:57 2018</span><br><span class="line">subProcess 3012 run, Thu Nov 22 16:19:58 2018</span><br><span class="line">subProcess 3012 run, Thu Nov 22 16:19:58 2018</span><br><span class="line">subProcess 3012 run, Thu Nov 22 16:19:59 2018</span><br><span class="line">subProcess 6600 run, Thu Nov 22 16:19:59 2018</span><br><span class="line">subProcess 6600 run, Thu Nov 22 16:20:01 2018</span><br><span class="line">subProcess 6600 run, Thu Nov 22 16:20:03 2018</span><br><span class="line">结束</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进程池</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">example</span><span class="params">(wait_ime)</span>:</span></span><br><span class="line">        n = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> n &lt; <span class="number">4</span>:</span><br><span class="line">            <span class="keyword">print</span> (<span class="string">"subProcess %s run,"</span> % os.getpid(), <span class="string">"&#123;0&#125;"</span>.format(time.ctime()))</span><br><span class="line">            time.sleep(wait_ime)</span><br><span class="line">            n += <span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    pool=Pool(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> (<span class="number">0.1</span>,<span class="number">1.2</span>,<span class="number">0.5</span>):</span><br><span class="line">        pool.apply_async(example,(i,))<span class="comment">#非阻塞模式，不会等一个进程运行完才运行下一个进程</span></span><br><span class="line">    pool.close()</span><br><span class="line">    pool.join()</span><br><span class="line">    print(<span class="string">'结束'</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>队列（实现生产者与消费者模式的核心工具）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MultiProcessProducer</span><span class="params">(multiprocessing.Process)</span>:</span><span class="comment">#生产者类</span></span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, num, queue)</span>:</span>				<span class="comment"># 传出队列queue</span></span><br><span class="line">      <span class="string">"""Constructor"""</span></span><br><span class="line">      multiprocessing.Process.__init__(self)</span><br><span class="line">      self.num = num</span><br><span class="line">      self.queue = queue</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span>									<span class="comment">#存入数字</span></span><br><span class="line">      t1 = time.time()</span><br><span class="line">      print(<span class="string">'producer start '</span> + str(self.num))</span><br><span class="line">      <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1000</span>):</span><br><span class="line">         self.queue.put((i, self.num))			<span class="comment">#插入队列</span></span><br><span class="line">         time.sleep(<span class="number">0.1</span>)</span><br><span class="line">         <span class="keyword">print</span> (<span class="string">'producer put'</span>, i, self.num)</span><br><span class="line">      t2 = time.time()</span><br><span class="line"></span><br><span class="line">      print(<span class="string">'producer exit '</span> + str(self.num))</span><br><span class="line">      use_time = str(t2 - t1)</span><br><span class="line">      print(<span class="string">'producer '</span> + str(self.num) + <span class="string">', \</span></span><br><span class="line"><span class="string">      use_time: '</span>+ use_time)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MultiProcessConsumer</span><span class="params">(multiprocessing.Process)</span>:</span><span class="comment"># 消费者类</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, num, queue)</span>:</span></span><br><span class="line">      <span class="string">"""Constructor"""</span></span><br><span class="line">      multiprocessing.Process.__init__(self)</span><br><span class="line">      self.num = num</span><br><span class="line">      self.queue = queue							<span class="comment">#传入队列</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        t1 = time.time()</span><br><span class="line">        print(<span class="string">'consumer start '</span> + str(self.num))</span><br><span class="line">        <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">            d = self.queue.get()</span><br><span class="line">            print(<span class="string">'get'</span>+str(d))</span><br><span class="line">        t2 = time.time()</span><br><span class="line">        print(<span class="string">'consumer exit '</span> + str(self.num))</span><br><span class="line">        print(<span class="string">'consumer '</span> + str(self.num) + <span class="string">', use time:'</span>+ str(t2 - t1))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">       <span class="comment"># create queue</span></span><br><span class="line">       queue = multiprocessing.Queue()</span><br><span class="line"></span><br><span class="line">       <span class="comment"># create processes</span></span><br><span class="line">       producer = []</span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">          producer.append(MultiProcessProducer(i, queue))</span><br><span class="line"></span><br><span class="line">       consumer = []</span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">          consumer.append(MultiProcessConsumer(i, queue))</span><br><span class="line"></span><br><span class="line">       <span class="comment"># start processes</span></span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(len(producer)):</span><br><span class="line">          producer[i].start()</span><br><span class="line"></span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(len(consumer)):</span><br><span class="line">          consumer[i].start()</span><br><span class="line"></span><br><span class="line">       <span class="comment"># wait for processs to exit</span></span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(len(producer)):</span><br><span class="line">          producer[i].join()</span><br><span class="line"></span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(len(consumer)):</span><br><span class="line">          queue.put(<span class="keyword">None</span>)</span><br><span class="line"></span><br><span class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(len(consumer)):</span><br><span class="line">          consumer[i].join()</span><br><span class="line"></span><br><span class="line">       print(<span class="string">'all done finish'</span>)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-
-          
+          <p><strong>关键词：</strong> GIL锁，IO繁忙，线程安全，线程同步，进程池，进程通信，队列<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/02/2018-11-22-python之多线程与多进程/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
     
     
     
@@ -1115,13 +1001,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-11-14-requests的简单反爬措施/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Theo">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Theo">
+      <meta itemprop="name" content="Theo's world">
     </span>
 
     
@@ -1131,7 +1017,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/02/2018-11-14-requests的简单反爬措施/" itemprop="url">Untitled</a></h1>
+                <a class="post-title-link" href="/2018/12/02/2018-11-14-requests的简单反爬措施/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -1141,9 +1027,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
                 2018-12-02
               </time>
             
@@ -1245,13 +1131,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-11-14-java编程思想笔记--多态/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Theo">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Theo">
+      <meta itemprop="name" content="Theo's world">
     </span>
 
     
@@ -1261,7 +1147,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/02/2018-11-14-java编程思想笔记--多态/" itemprop="url">Untitled</a></h1>
+                <a class="post-title-link" href="/2018/12/02/2018-11-14-java编程思想笔记--多态/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -1271,9 +1157,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
                 2018-12-02
               </time>
             
@@ -1409,13 +1295,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-11-12-Python 使用requests发送POST请求/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Theo">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Theo">
+      <meta itemprop="name" content="Theo's world">
     </span>
 
     
@@ -1425,7 +1311,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/02/2018-11-12-Python 使用requests发送POST请求/" itemprop="url">Untitled</a></h1>
+                <a class="post-title-link" href="/2018/12/02/2018-11-12-Python 使用requests发送POST请求/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -1435,9 +1321,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
                 2018-12-02
               </time>
             
@@ -1532,13 +1418,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-11-11-python3 把u开头的unicode转中文/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Theo">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Theo">
+      <meta itemprop="name" content="Theo's world">
     </span>
 
     
@@ -1548,7 +1434,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/02/2018-11-11-python3 把u开头的unicode转中文/" itemprop="url">Untitled</a></h1>
+                <a class="post-title-link" href="/2018/12/02/2018-11-11-python3 把u开头的unicode转中文/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -1558,9 +1444,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
                 2018-12-02
               </time>
             
@@ -1686,8 +1572,8 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-author-name" itemprop="name">Theo</p>
+              <p class="site-description motion-element" itemprop="description">Don't BB,show the code!!</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -1698,7 +1584,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">15</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -1742,13 +1628,13 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Theo</span>
 
   
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -1756,7 +1642,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
 
 
