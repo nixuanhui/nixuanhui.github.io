@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="批量插入 基础语句：insert into table(a,b) values(‘a’,’b’),(‘c’,’d’)  python实现   12345678910111213141516171819202122232425262728def insert_goods_and_article_batch(table_name,column_name,data,batch,conn):">
+<meta name="description" content="问题：声明变量有几种方式？123var name = *flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)//第一种name := *flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)//第二种  解析：  Go 语言中的类型推断：一种编程语言在编译期自动解释表达式类型的能力 短">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Theo&#39;s world">
-<meta property="og:url" content="http://yoursite.com/2018/12/02/2018-07-18-mysql的批量插入及更新/index.html">
+<meta property="og:title" content="go入门--程序主体的那些事">
+<meta property="og:url" content="http://yoursite.com/2018/12/06/go入门--程序主体的那些事/index.html">
 <meta property="og:site_name" content="Theo&#39;s world">
-<meta property="og:description" content="批量插入 基础语句：insert into table(a,b) values(‘a’,’b’),(‘c’,’d’)  python实现   12345678910111213141516171819202122232425262728def insert_goods_and_article_batch(table_name,column_name,data,batch,conn):">
+<meta property="og:description" content="问题：声明变量有几种方式？123var name = *flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)//第一种name := *flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)//第二种  解析：  Go 语言中的类型推断：一种编程语言在编译期自动解释表达式类型的能力 短">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-02T08:01:41.164Z">
+<meta property="og:updated_time" content="2018-12-06T13:15:41.897Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Theo&#39;s world">
-<meta name="twitter:description" content="批量插入 基础语句：insert into table(a,b) values(‘a’,’b’),(‘c’,’d’)  python实现   12345678910111213141516171819202122232425262728def insert_goods_and_article_batch(table_name,column_name,data,batch,conn):">
+<meta name="twitter:title" content="go入门--程序主体的那些事">
+<meta name="twitter:description" content="问题：声明变量有几种方式？123var name = *flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)//第一种name := *flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)//第二种  解析：  Go 语言中的类型推断：一种编程语言在编译期自动解释表达式类型的能力 短">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/02/2018-07-18-mysql的批量插入及更新/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/06/go入门--程序主体的那些事/">
 
 
 
 
 
-  <title> | Theo's world</title>
+  <title>go入门--程序主体的那些事 | Theo's world</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-07-18-mysql的批量插入及更新/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/06/go入门--程序主体的那些事/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Theo">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">go入门--程序主体的那些事</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
-                2018-12-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-06T21:16:50+08:00">
+                2018-12-06
               </time>
             
 
@@ -299,18 +299,54 @@
       
 
       
-        <h1 id="批量插入"><a href="#批量插入" class="headerlink" title="批量插入"></a>批量插入</h1><ul>
-<li><p>基础语句：insert into table(a,b) values(‘a’,’b’),(‘c’,’d’)</p>
+        <h4 id="问题：声明变量有几种方式？"><a href="#问题：声明变量有几种方式？" class="headerlink" title="问题：声明变量有几种方式？"></a><strong>问题：声明变量有几种方式？</strong></h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = *flag.String(<span class="string">"name"</span>, <span class="string">"everyone"</span>, <span class="string">"The greeting object."</span>)<span class="comment">//第一种</span></span><br><span class="line"></span><br><span class="line">name := *flag.String(<span class="string">"name"</span>, <span class="string">"everyone"</span>, <span class="string">"The greeting object."</span>)<span class="comment">//第二种</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>解析：</p>
+<ul>
+<li><strong>Go 语言中的类型推断</strong>：一种编程语言在编译期自动解释表达式类型的能力</li>
+<li><strong>短变量声明的用法</strong>：只能在函数体内部使用短变量声明</li>
+<li><p><strong>Go 语言的类型推断可以带来哪些好处？</strong></p>
+<ul>
+<li>Go 语言的类型推断可以明显提升程序的灵活性，使得代码重构变得更加容易，同时又不会给代码的维护带来额外负担，更不会损失程序的运行效率。</li>
+</ul>
 </li>
-<li><p>python实现</p>
+<li><p><strong>变量的重声明（已经声明过的变量再次声明）是什么意思？</strong></p>
+<ul>
+<li>由于<strong>变量的类型在其初始化时就已经确定</strong>了，所以对它再次声明时赋予的类型必须与其原本的类型相同，否则会产生编译错误。</li>
+<li>变量的重声明<strong>只可能发生在某一个代码块中</strong>。如果与当前的变量重名的是外层代码块中的变量，那么就是另外一种含义了</li>
+<li>变量的重声明<strong>只有在使用短变量声明</strong>时才会发生，否则也无法通过编译。</li>
+<li>被“声明并赋值”的变量必须是多个，并且其中至少有一个是新的变量。这时我们才可以说对其中的旧变量进行了重声明。</li>
+</ul>
 </li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">insert_goods_and_article_batch</span><span class="params">(table_name,column_name,data,batch,conn)</span>:</span></span><br><span class="line">        data=data.astype(str)</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,math.ceil(data.shape[<span class="number">0</span>]/batch)):</span><br><span class="line">            insert_sql=<span class="string">'insert ignore into '</span>+table_name+<span class="string">'('</span>+<span class="string">','</span>.join(column_name)+<span class="string">')'</span>+<span class="string">' values '</span></span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                <span class="keyword">if</span> i==math.ceil(data.shape[<span class="number">0</span>]/batch)<span class="number">-1</span>:</span><br><span class="line">                    data_tmp=data.loc[i*batch:,:]</span><br><span class="line">                    data_tmp=data_tmp.reset_index(drop=<span class="keyword">True</span>)</span><br><span class="line">                    <span class="keyword">for</span> i <span class="keyword">in</span> range(data_tmp.shape[<span class="number">0</span>]):</span><br><span class="line">                        insert_sql=insert_sql+<span class="string">'('</span>+<span class="string">","</span>.join(str(s) <span class="keyword">for</span> s <span class="keyword">in</span> list(data_tmp.loc[i,:]) <span class="keyword">if</span> s <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">None</span>)+<span class="string">"),"</span></span><br><span class="line"></span><br><span class="line">                    conn.execute(insert_sql[:<span class="number">-1</span>])</span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    data_tmp=data.loc[i*batch:(i+<span class="number">1</span>)*batch<span class="number">-1</span>,:]</span><br><span class="line">                    data_tmp=data_tmp.reset_index(drop=<span class="keyword">True</span>)</span><br><span class="line"> </span><br><span class="line">                    <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>,data_tmp.shape[<span class="number">0</span>]):</span><br><span class="line"></span><br><span class="line">                        insert_sql=insert_sql+<span class="string">'('</span>+<span class="string">","</span>.join(list(data_tmp.loc[j,:]))+<span class="string">"),"</span></span><br><span class="line"></span><br><span class="line">                    conn.execute(insert_sql[:<span class="number">-1</span>])</span><br><span class="line">                    <span class="keyword">del</span> data_tmp</span><br><span class="line">            <span class="keyword">except</span> Exception <span class="keyword">as</span> err:</span><br><span class="line">                <span class="keyword">raise</span>(err)</span><br><span class="line">                <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
-<h1 id="批量插入-1"><a href="#批量插入-1" class="headerlink" title="批量插入"></a>批量插入</h1><ul>
-<li><p>基础语句：insert into test_tbl (id,dr) values (1,’2’),(2,’3’) on duplicate key update dr=values(dr);</p>
 </li>
-<li><p>python实现：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">            update_sql=<span class="string">'insert into m_user_base(id,cs_flag) values'</span></span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(data.shape[<span class="number">0</span>]):</span><br><span class="line">                update_sql+=<span class="string">"(&#123;0&#125;,1),"</span>.format(data.iloc[i,<span class="number">0</span>])</span><br><span class="line">            update_sql=update_sql[:<span class="number">-1</span>]+<span class="string">' on duplicate key update cs_flag=values(cs_flag)'</span></span><br><span class="line">            <span class="keyword">with</span> engine.connect() <span class="keyword">as</span> conn:</span><br><span class="line">                conn.execute(update_sql)</span><br><span class="line">            print(<span class="string">'更新完成'</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line">        <span class="keyword">except</span> :</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">print</span> (traceback.print_exc())</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">False</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<a id="more"></a>
+<h4 id="问题：如果一个变量与其外层代码块中的变量重名会出现什么状况？"><a href="#问题：如果一个变量与其外层代码块中的变量重名会出现什么状况？" class="headerlink" title="问题：如果一个变量与其外层代码块中的变量重名会出现什么状况？"></a>问题：如果一个变量与其外层代码块中的变量重名会出现什么状况？</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> block = <span class="string">"package"</span><span class="comment">//声明</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	block := <span class="string">"function"</span><span class="comment">//再声明</span></span><br><span class="line">	&#123;</span><br><span class="line">		block := <span class="string">"inner"</span><span class="comment">//再声明</span></span><br><span class="line">		fmt.Printf(<span class="string">"The block is %s.\n"</span>, block)</span><br><span class="line">	&#125;</span><br><span class="line">	fmt.Printf(<span class="string">"The block is %s.\n"</span>, block)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>解析：</p>
+<ul>
+<li><p>程序实体的访问权限有三种：<strong>包级私有的、模块级私有的和公开的。</strong></p>
+</li>
+<li><p>能通过编译。运行后打印出的内容是：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">The block is inner.</span><br><span class="line">The block is function.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>首先，代码引用变量的时候总会最优先查找当前代码块中的那个变量</li>
+<li>其次，如果当前代码块中没有声明以此为名的变量，那么程序会沿着代码块的嵌套关系，从直接包含当前代码块的那个代码块开始，一层一层地查找</li>
+<li>一般情况下，程序会一直查到<strong>当前代码包</strong>代表的那层代码块</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>不同代码块中的重名变量与变量重声明中的变量区别到底在哪儿？</strong></p>
+<ul>
+<li>变量重声明中的变量一定是在某一个代码块内的。(某一个代码块内”并不包含它的任何子代码块)</li>
+<li>而可重名变量指的正是在多个代码块之间的由相同的标识符代表的变量。</li>
+<li><strong>变量重声明是对同一个变量的多次声明，这里的变量只有一个</strong>。而可重名变量中涉及的变量肯定是有多个的</li>
+<li>不论对<strong>变量重声明多少次，其类型必须始终一致</strong>，具体遵从它第一次被声明时给定的类型。而可重名变量之间不存在类似的限制，它们的类型可以是任意的</li>
+<li>如果可重名变量所在的代码块之间存在直接或间接的嵌套关系，那么它们之间一定会存在“屏蔽”的现象。但是这种现象绝对不会在变量重声明的场景下出现。</li>
+</ul>
+</li>
 </ul>
 
       
@@ -336,8 +372,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/02/2018-07-18-centos安装NVIDIA显卡驱动的那些坑/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2018/12/02/2018-12-01-知乎精华话题爬虫/" rel="next" title="知乎精华话题爬虫">
+                <i class="fa fa-chevron-left"></i> 知乎精华话题爬虫
               </a>
             
           </div>
@@ -345,10 +381,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/02/2018-07-22-pandas数据合并/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -462,7 +494,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#批量插入"><span class="nav-number">1.</span> <span class="nav-text">批量插入</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#批量插入-1"><span class="nav-number">2.</span> <span class="nav-text">批量插入</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#问题：声明变量有几种方式？"><span class="nav-number">1.</span> <span class="nav-text">问题：声明变量有几种方式？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#问题：如果一个变量与其外层代码块中的变量重名会出现什么状况？"><span class="nav-number">2.</span> <span class="nav-text">问题：如果一个变量与其外层代码块中的变量重名会出现什么状况？</span></a></li></ol></div>
             
 
           </div>

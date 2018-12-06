@@ -232,6 +232,151 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/06/go入门--程序主体的那些事/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Theo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Theo's world">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/06/go入门--程序主体的那些事/" itemprop="url">go入门--程序主体的那些事</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-06T21:16:50+08:00">
+                2018-12-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="问题：声明变量有几种方式？"><a href="#问题：声明变量有几种方式？" class="headerlink" title="问题：声明变量有几种方式？"></a><strong>问题：声明变量有几种方式？</strong></h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = *flag.String(<span class="string">"name"</span>, <span class="string">"everyone"</span>, <span class="string">"The greeting object."</span>)<span class="comment">//第一种</span></span><br><span class="line"></span><br><span class="line">name := *flag.String(<span class="string">"name"</span>, <span class="string">"everyone"</span>, <span class="string">"The greeting object."</span>)<span class="comment">//第二种</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>解析：</p>
+<ul>
+<li><strong>Go 语言中的类型推断</strong>：一种编程语言在编译期自动解释表达式类型的能力</li>
+<li><strong>短变量声明的用法</strong>：只能在函数体内部使用短变量声明</li>
+<li><p><strong>Go 语言的类型推断可以带来哪些好处？</strong></p>
+<ul>
+<li>Go 语言的类型推断可以明显提升程序的灵活性，使得代码重构变得更加容易，同时又不会给代码的维护带来额外负担，更不会损失程序的运行效率。</li>
+</ul>
+</li>
+<li><p><strong>变量的重声明（已经声明过的变量再次声明）是什么意思？</strong></p>
+<ul>
+<li>由于<strong>变量的类型在其初始化时就已经确定</strong>了，所以对它再次声明时赋予的类型必须与其原本的类型相同，否则会产生编译错误。</li>
+<li>变量的重声明<strong>只可能发生在某一个代码块中</strong>。如果与当前的变量重名的是外层代码块中的变量，那么就是另外一种含义了</li>
+<li>变量的重声明<strong>只有在使用短变量声明</strong>时才会发生，否则也无法通过编译。</li>
+<li>被“声明并赋值”的变量必须是多个，并且其中至少有一个是新的变量。这时我们才可以说对其中的旧变量进行了重声明。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/06/go入门--程序主体的那些事/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-12-01-知乎精华话题爬虫/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1402,137 +1547,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/2018-11-11-python3 把u开头的unicode转中文/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Theo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Theo's world">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/02/2018-11-11-python3 把u开头的unicode转中文/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T16:23:08+08:00">
-                2018-12-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="python3-把-u开头的unicode转中文"><a href="#python3-把-u开头的unicode转中文" class="headerlink" title="python3 把\u开头的unicode转中文"></a>python3 把\u开头的unicode转中文</h1><ul>
-<li>python3 中</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i.encode(&apos;utf-8&apos;).decode(&apos;unicode_escape&apos;)  #i=&apos;\u751F\u5316\u5371\u673A&apos;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>python2 中</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i.decode(&apos;unicode-escape&apos;)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>总结 unicode_escape可看作Unicode的反向编码，属于unicode存储到文本的过程中另一种存储方式</li>
-</ul>
-<p>参考 <a href="http://www.qmailer.net/archives/251.html" target="_blank" rel="noopener">http://www.qmailer.net/archives/251.html</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1583,7 +1597,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
